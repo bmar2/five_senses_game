@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Five Senses — WebGL Mini-Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <h1>Five Senses — Interactive WebGL Game</h1>
+    <p>Click a floating orb to play a mini-game that tests a sense. Smell & Taste rounds are optional, safe, and use real-world items.</p>
+    <div id="score">Score: <span id="score-val">0</span></div>
+    <div id="instructions">Tip: allow audio and vibration if your device asks.</div>
+    <button id="reset">Reset Score</button>
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <div id="modal" class="hidden">
+    <div id="modal-content">
+      <button id="close">✕</button>
+      <div id="challenge"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
